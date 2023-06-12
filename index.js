@@ -25,4 +25,6 @@ async function getWalletBalance() {
   return balance;
 }
 
-console.log('USDC BALANCE: ', getWalletBalance().usdc);
+getWalletBalance().then((balance) =>
+  console.log('USDC BALANCE: ', balance.usdc)
+);
